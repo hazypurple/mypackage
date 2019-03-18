@@ -11,10 +11,10 @@ def top_n(items,n):
         [8,7,3]
 
     """
-    for i in range(n): #keep sorting until we have the top n items
-        for j in range(len(items)-1-i):
-            if items[j] > items[j+1] : #if this item is bigger than next item..
-                items[j], items[j+1] = items[j+1], items[j] #swap the two!
+    for a in range(n): #keep sorting until we have the top n items
+        for b in range(len(items)-1-a):
+            if items[b] > items[b+1] : #if this item is bigger than next item..
+                items[b], items[b+1] = items[b+1], items[b] #swap the two!
 
     #get last two items
     top_n = items[-n:]
